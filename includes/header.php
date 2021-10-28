@@ -59,8 +59,8 @@
                <span class="dot" onclick = "currentSlide(3)"></span>
              </div>
 
-            </div>  <!--banner-->      
-          </div>   <!--topHeader-->
+            </div>        
+          </div>   
           <script>
 
 // removing heroimage text animation after 1st load of page

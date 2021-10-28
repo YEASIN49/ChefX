@@ -7,7 +7,7 @@
            <div class="imageContainer">
              <div class="featuredImages" >
               
-               <img src="images/truck.png" alt="truck" class="truckHolder" style="width:1160px;height:510px; border:none">
+               <img src="images/truck.png" alt="truck" class="truckHolder" >
 
                <img src="images/offers/featured-1.jpg" alt="dummyImage" class="imageAdjuster"><div class="layerHolder"><div class="imageLayer"><div class="layerText" ><p>Sushi  XYZ<br> 160<sup>TK</p></div></div> </div>
                <img src="images/offers/featured-2.jpg" alt="dummyImage" class="imageAdjuster"><div class="layerHolder"><div class="imageLayer"><div class="layerText" ><p>Pasta  XYZ<br> 170<sup>TK</p></div></div> </div>

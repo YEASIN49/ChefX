@@ -6,6 +6,16 @@ function jumpWindow(moveTo){
   });
 }
 
+// /////////// BurgerIcon Animation //////////////
+const hamburger = document.querySelector(".burgerpng");
+const navMenu = document.querySelector(".hideable-nav");
+const x = window.getComputedStyle(navMenu);
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("hamburger-btn-close");
+  navMenu.classList.toggle("toggle-hidable-nav");
+  // navMenu.style.display="block";
+});
+
 
 //////////// Shrinking Nav Bar  ///////////
 window.onscroll = function() {scrollFunction()};
@@ -17,32 +27,35 @@ function scrollFunction(){
  // var hoverLayer = document.getElementsByClassName("layerText");
  if(document.body.scrollTop < 1350 || document.documentElement.scrollTop < 1350){
     for(var i=0;i<slider.length;++i){
-      slider[i].style.transform = "translate(-405%,-230%)";
+      // slider[i].style.transform = "translate(-405%,-230%)";
+      slider[i].style.transform = "translateX(-76vw)";
       hoverElement[i].style.transform = "translate(-428%,-112%)"; 
     //  hoverLayer[i].style.transform = "translate(0%,0%)";
       console.log("Entered scrollTop");
       } 
-     truck.style.transform = "translateX(-75%)";
+     truck.style.transform = "translateX(-58vw)";
     
   }
  if((document.body.scrollTop > 1350 && document.body.scrollTop < 1750 )|| (document.documentElement.scrollTop > 1350 && document.documentElement.scrollTop < 1750)){
    for(var i=0;i<slider.length;++i){
-    slider[i].style.transform = "translate(20%,-230%)";
-    hoverElement[i].style.transform = "translate(0%,-112%)"; 
+    // slider[i].style.transform = "translate(10vw,-230%)";
+    slider[i].style.transform = "translateX(0%)";
+    hoverElement[i].style.transform = "translate(5vw,-112%)"; 
    // hoverLayer[i].style.transform = "translate(0%,0%)";    
-    console.log("Entered scrollTop");
+    console.log("Entered Scroll Area ");
     } 
-   truck.style.transform = "translateX(19%)";
+   truck.style.transform = "translateX(22%)";
   }  
-  if(document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750){
-    for(var i=0;i<slider.length;++i){
-      slider[i].style.transform = "translate(455%,-230%)"
-      hoverElement[i].style.transform = "translate(440%,-112%)"; 
-     // hoverLayer[i].style.display = "none";
-        console.log("Entered scrollTop");
-      } 
-      truck.style.transform = "translateX(115%)";
-   }     
+  // if(document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750){
+  //   for(var i=0;i<slider.length;++i){
+  //     // slider[i].style.transform = "translate(455%,-230%)"
+  //     slider[i].style.transform = "translateX(455%)"
+  //     hoverElement[i].style.transform = "translate(440%,-112%)"; 
+  //    // hoverLayer[i].style.display = "none";
+  //       console.log("Entered scrollTop");
+  //     } 
+  //     truck.style.transform = "translateX(115%)";
+  //  }     
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("brandLogo").style.width = "85px";
     document.getElementById("navUl").style.padding = "0 70px 0 10px";

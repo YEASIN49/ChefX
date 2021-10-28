@@ -28,11 +28,11 @@ include_once("includes/config.php");
         <?php include("includes/header.php");?>
         <?php include("includes/menu.php");?>
         <?php include("includes/featuredItem.php");?>
-        <?php include("includes/offers.php");?>
-        <?php include("includes/parallex.php");?>
-        <?php include("includes/aboutUs.php");?>
-        <?php include("includes/contact.php");?>
-        <?php include("includes/footer.php");?>
+        <?php //include("includes/offers.php");?>
+        <?php //include("includes/parallex.php");?>
+        <?php //include("includes/aboutUs.php");?>
+        <?php //include("includes/contact.php");?>
+        <?php //include("includes/footer.php");?>
 
         <script type="text/javascript" src="allFunction.js">
         /*
