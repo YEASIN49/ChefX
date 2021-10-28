@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background: black;
+    margin-bottom: 15px;
+}
+.alterColor{
+    text-align: center;
+    font-size: 80px;
+    word-spacing: 0.001em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 90%;
+    
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.content li{
+    list-style-type: none;
+    height: 200px;
+    width : 30%;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    display: block; 
+    text-align: center;
+    padding-top: 20%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+li:hover{
+    background: #e4d4b2;
+    
+}
+
+/************** Offer Generator ***************/
+
+.returnBtn{
+    color: black;
+    
+    font-size: 55px;
+    margin-left: 15px;
+}
+.returnBtn a{
+    text-decoration: none;
+    color: black;
+}
+
+.formContainer{
+    font-family:'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    color: white;   
+    margin: 0 auto;
+    display: block;
+    width: 55%;
+    padding: 5px;
+}
+
+.formLayout{
+    margin: auto;
+    display: block;
+    width: 55%;
+    padding: 20px 25px 10px 25px;
+    background: #c1a35f;
+    border: 5px solid #bb943f;
+}
+.formHeader{
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.formContent{
+    padding-top: 25px;
+}
+
+.formField{
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 10%;
+    
+  }
+
+.insertBtn{
+    margin: 10px 0 15px 0;
+    background: rgb(0, 0, 0);
+    border: none;
+    width: 165px;
+    height: 40px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+.insertBtn:hover{
+   background: rgb(53, 51, 41);
+}
+
+/************** Offer Generator Ends Here***************/

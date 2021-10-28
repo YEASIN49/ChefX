@@ -1,0 +1,37 @@
+body{
+    overflow-x: hidden;
+}
+.logInFormContainer{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 150px;
+}
+.logInWrapper{
+    margin: auto;
+    padding: 100px;
+    height: 350px;
+    min-width: 300px;
+    max-width: 350px;
+    border-radius: 10px;
+    background: rgb(177, 153, 117);
+    text-align: center;
+}
+.logInWrapper input{
+    padding: 0 10px;
+    height: 30px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.logInWrapper #submit{
+
+    width: 50%;
+    display: block;
+}
+.logInWrapper #submit:hover{
+    background-color: rgb(168, 109, 31);
+    color: aliceblue;
+}

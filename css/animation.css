@@ -1,0 +1,125 @@
+
+/*///// Hero slider fade animation //////*/
+@-moz-keyframes fade {
+    from {
+        /*  opacity: 0;*/
+        background:rgb(201, 195, 180);
+     } 
+     to {
+         /*opacity: .5*/
+         background:linear-gradient(rgba(106, 6, 136, 0),rgba(43, 3, 66, 0),rgba(24, 15, 0, 0)); 
+    
+     }
+   
+
+}
+
+@-webkit-keyframes fade {
+    from {
+       /*  opacity: 0;*/
+        background:rgb(201, 195, 180);
+    } 
+    to {
+        /*opacity: .5*/
+        background:linear-gradient(rgba(106, 6, 136, 0),rgba(43, 3, 66, 0),rgba(24, 15, 0, 0)); 
+    
+    }
+  }
+
+  @keyframes fadeIn{
+    from {
+         margin-left: 2000px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+  
+  @keyframes fade {
+    from {
+        /*  opacity: 0;*/
+        background:rgb(201, 195, 180);
+     } 
+     to {
+         /*opacity: .5*/
+         background:linear-gradient(rgba(106, 6, 136, 0),rgba(43, 3, 66, 0),rgba(24, 15, 0, 0)); 
+    
+     }
+  } 
+
+
+  /*///// Hero slider welcome text  animation //////*/
+
+@keyframes slideFromLeft {
+    0% {margin-right: 2000px;}
+    40% {margin-right: -200px;}
+    65% {margin-right: 100px;}
+    75% {margin-right: 50px;}
+    100% {margin-right: 0px;}
+        
+}
+
+/*
+
+@-o-keyframes popText {
+    from{
+        font-size: 0;
+       
+   }
+   to{
+        
+        
+   }
+}
+
+@-moz-keyframes popText {
+    from{
+        font-size: 0;
+       
+   }
+   to{
+       
+        
+   }
+}
+
+@-webkit-keyframes popText {
+    from{
+        font-size: 0;
+       
+   }
+   to{
+        
+        
+   }
+}   */
+
+@keyframes rotateY{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotateX{
+    0%{
+          transform: rotateX(0deg);
+    }
+    100%{
+         transform: rotateX(360deg);
+    }
+}
+@keyframes rotateZ{
+    0%{
+          transform: rotateZ(0deg);
+    }
+    100%{
+         transform: rotateZ(360deg);
+    }
+}
+
+
+/******* menu animation ********/
+
+
