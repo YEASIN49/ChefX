@@ -206,6 +206,12 @@ ul {
   /* .navContainer {
     background: rgb(0, 0, 0);
   } */
+  #navLogo {
+    margin: 0;
+  }
+  #brandLogo {
+    width: 85px;
+  }
   .hideable-nav {
     position: absolute;
     display: block;
@@ -240,7 +246,9 @@ ul {
   } */
   .burgerpng {
     display: block;
-    margin: 15px 0;
+    margin: auto 0;
+    width: 80px;
+    padding: 10px;
   }
 }
 
@@ -271,7 +279,8 @@ ul {
 /*Navigation style Ends here*/
 /*All elements inside banner starts here*/
 .topHeader {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 700px;
 }
 
@@ -305,11 +314,13 @@ ul {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  height: 700px;
 }
 
 .heroContent {
   /*background-color : rgba(22, 22, 34, 0.548);
  */
+
   position: relative;
   transform: translate(0, -160%);
   overflow: hidden; /* must be used if margin-right:-200px is used in slideFromLeft animation */
@@ -346,6 +357,9 @@ ul {
   line-height: 90%;
   /* animation-name: rotateY;
     animation-duration: 1s;*/
+}
+.alterColor span {
+  font-size: 100px;
 }
 .yRotatable {
   display: inline-block;
@@ -458,6 +472,32 @@ ul {
 .dot:hover {
   background: #be4c00;
 }
+/* *******************
+*
+*   Hero Media
+*
+*********************** */
+@media only screen and (max-width: 768px) {
+  .heroHeader {
+    font-size: 60px;
+  }
+  .alterColor {
+    font-size: 30px;
+  }
+  .alterColor span {
+    font-size: 45px;
+  }
+  .heroP {
+    font-size: 18px;
+  }
+}
+/* ********************
+*
+*
+*   Header Ends here
+*
+*
+******************** */
 /*All elements inside banner ends here*/
 /* ******************
 *********************
@@ -469,7 +509,7 @@ ul {
 ******************** */
 /* All Menu Elements Starts Here*/
 .menuContainer {
-  width: 100vw;
+  width: 100%;
   max-width: 1300px;
   background: white;
   box-sizing: border-box;
@@ -560,8 +600,9 @@ ul {
 .menuHeader .underline::after {
   content: "";
   width: 150px;
+  max-width: 40vw;
   height: 3px;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 15px 12px 0 0;
   transform: translateX(-108%);
   background: #c1a35f;
@@ -572,6 +613,7 @@ ul {
   position: absolute;
   margin: 15px 0 0 12px;
   width: 150px;
+  max-width: 40vw;
   height: 3px;
   background: #c1a35f;
 }
@@ -591,6 +633,7 @@ ul {
 }
 .menuList > img {
   margin: 15px 5px 15px 5px;
+  width: 135px;
 }
 
 .detailContainer:nth-last-child(odd) {
@@ -673,8 +716,34 @@ ul {
 ******************** */
 
 @media only screen and (max-width: 576px) {
+  .menuHeader .underline::after {
+    /* margin: 15px 18px 0 0; */
+    transform: translateX(-109.6%);
+  }
+  .buttonContainer ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .tablinks {
+    margin: 7px;
+    width: 45%;
+    border-bottom: 0.5px solid #c1a35f;
+    border-radius: 20px;
+  }
+  #animatedTabBtn {
+    border-radius: 20px;
+  }
+  .menu li {
+    margin: 0 10px;
+  }
   .menuList {
     width: 90%;
+  }
+
+  .menuList > img {
+    width: 125px;
   }
 }
 

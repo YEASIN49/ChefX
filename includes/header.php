@@ -16,7 +16,7 @@
                 
                 <h1 class="heroHeader welcomeOn">Welcome </h1>
                
-                <h1 class="alterColor">TO THE CHEF<span class="xRotatable" style="color:#d4a331 ; font-size:100px ; text-shadow:3px 2px #770f01">X</span></h1>
+                <h1 class="alterColor">TO THE CHEF<span class="xRotatable" style="color:#d4a331 ; text-shadow:3px 2px #770f01">X</span></h1>
                 <p class="heroP">What is our Recipe is What You Desire</p>
                 <button type=button onclick="jumpWindow('menuSection')" class="heroBtn btn"><p class="btnP btn">WHAT WE HAVE</p></button>
                     
@@ -29,7 +29,7 @@
                 <div class="heroContent">
         
                 <h1 class="heroHeader">Welcome </h1>
-                <h1 class="alterColor">TO THE CHEF<span class="yRotatable" style="color:#d4a331 ; font-size:100px ; text-shadow:2px 2px #770f01">X</span></h1>
+                <h1 class="alterColor">TO THE CHEF<span class="yRotatable" style="color:#d4a331 ; text-shadow:2px 2px #770f01">X</span></h1>
                 <p class="heroP">What is our Recipe is What You Desire</p>
                 <button type=button onclick="jumpWindow('menuSection')" class="heroBtn btn"><p class="btnP btn">WHAT WE HAVE</p></button>
 
@@ -42,7 +42,7 @@
                 <div class="heroContent">
         
                 <h1 class="heroHeader">Welcome </h1>
-                <h1 class="alterColor">TO THE CHEF<span class="zRotatable" style="color:#d4a331 ; font-size:100px ; text-shadow:2px 2px #770f01">X</span></h1>
+                <h1 class="alterColor">TO THE CHEF<span class="zRotatable" style="color:#d4a331 ; text-shadow:2px 2px #770f01">X</span></h1>
                 <p class="heroP">What is our Recipe is What You Desire</p>
                 <button type=button onclick="jumpWindow('menuSection')" class="heroBtn btn"><p class="btnP btn">WHAT WE HAVE</p></button>
 

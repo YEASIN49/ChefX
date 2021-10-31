@@ -33,7 +33,7 @@
                       ?>
              
                          <li class="menuList">
-                           <img style="width:135px" src="images/menu/menu-1.jpg" alt="Breakfasts">
+                           <img src="images/menu/menu-1.jpg" alt="Breakfasts">
                            <div class="detailContainer">
                              <h3 class="menuTitle font-general">
                                <?php echo htmlentities($result->menu_title);?>
@@ -75,7 +75,7 @@
                     foreach($results as $result){ 
                       ?>
              
-                         <li class="menuList"><img style="width:135px" src="images/menu/menu-1.jpg" alt="Breakfasts"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
+                         <li class="menuList"><img src="images/menu/menu-1.jpg" alt="Breakfasts"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
                         
             <?php }
                     } ?>    
@@ -101,7 +101,7 @@
                     foreach($results as $result){ 
                       ?>
                         <!--NOTE:Folder name case are sensitive in server-->
-                         <li class="menuList"><img style="max-width:135px" src="images/menu/menu-1.jpg" alt="Breakfasts"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
+                         <li class="menuList"><img src="images/menu/menu-1.jpg" alt="Breakfasts"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
                               
             <?php }
                     } ?>    
@@ -123,7 +123,7 @@
                     foreach($results as $result){ 
                       ?>
              
-                         <li class="menuList"><img style="width:135px" src="images/menu/menu-1.jpg" alt="snacks"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
+                         <li class="menuList"><img src="images/menu/menu-1.jpg" alt="snacks"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
                         
             <?php }
                     } ?>
@@ -145,7 +145,7 @@
                     foreach($results as $result){ 
                       ?>
              
-                         <li class="menuList"><img style="width:135px" src="images/menu/menu-1.jpg" alt="dessert"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
+                         <li class="menuList"><img src="images/menu/menu-1.jpg" alt="dessert"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
                         
             <?php }
                     } ?>
