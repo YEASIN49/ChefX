@@ -29,7 +29,8 @@ function scrollFunction(){
     for(var i=0;i<slider.length;++i){
       // slider[i].style.transform = "translate(-405%,-230%)";
       slider[i].style.transform = "translateX(-76vw)";
-      hoverElement[i].style.transform = "translate(-428%,-112%)"; 
+      // hoverElement[i].style.transform = "translate(-428%,-112%)"; 
+      hoverElement[i].style.transform = "translateX(-76vw)"; 
     //  hoverLayer[i].style.transform = "translate(0%,0%)";
       console.log("Entered scrollTop");
       } 
@@ -40,7 +41,7 @@ function scrollFunction(){
    for(var i=0;i<slider.length;++i){
     // slider[i].style.transform = "translate(10vw,-230%)";
     slider[i].style.transform = "translateX(0%)";
-    hoverElement[i].style.transform = "translate(5vw,-112%)"; 
+    hoverElement[i].style.transform = "translateX(0%)"; 
    // hoverLayer[i].style.transform = "translate(0%,0%)";    
     console.log("Entered Scroll Area ");
     } 

@@ -32,7 +32,22 @@
                     foreach($results as $result){ 
                       ?>
              
-                         <li class="menuList"><img style="width:135px" src="images/menu/menu-1.jpg" alt="Breakfasts"><div class="detailContainer"><h3 class="menuTitle font-general"><?php echo htmlentities($result->menu_title);?></h3><br><p class="font-general price"><?php echo htmlentities($result->menu_price);?>/-</p><br><p class="itemDetail font-general"><?php echo htmlentities($result->menu_detail);?></p><div class="cartButtonContainer"></div></div></li>
+                         <li class="menuList">
+                           <img style="width:135px" src="images/menu/menu-1.jpg" alt="Breakfasts">
+                           <div class="detailContainer">
+                             <h3 class="menuTitle font-general">
+                               <?php echo htmlentities($result->menu_title);?>
+                            </h3>
+                            <br>
+                            <p class="font-general price">
+                              <?php echo htmlentities($result->menu_price);?>/-</p>
+                              <br>
+                              <p class="itemDetail font-general">
+                                <?php echo htmlentities($result->menu_detail);?>
+                              </p>
+                              <div class="cartButtonContainer"></div>
+                            </div>
+                          </li>
                          
             <?php }
                     } ?>    
