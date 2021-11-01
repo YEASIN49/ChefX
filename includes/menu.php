@@ -2,7 +2,7 @@
 <div class="menuContainer" id="menuSection">
     <div class="menuWrapper">
         <div class="menuHeader">
-            <h1><span>Choose</span><br class="abc"> OUR MENU <br><i class="fas fa-wine-glass-alt"></i><span class="underline"></span></h1>
+            <h1><span>Choose</span><br> OUR MENU <br><i class="fas fa-wine-glass-alt"></i><span class="underline"></span></h1>
         </div> <!--menuHeader ends here-->
         <div  class="buttonContainer">
           <ul> 

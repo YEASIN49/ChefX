@@ -244,10 +244,28 @@ ul {
   /* .hideable-nav {
     display: none;
   } */
+  .signInToggler {
+    display: none;
+  }
+  .userIconContent {
+    display: block;
+    font-size: 14px;
+    background: none;
+    /* /* display: none; */
+    position: static;
+    border: none;
+    border-top: 1px solid rgba(255, 234, 48, 0.521);
+    /* right: 5%; */
+    /* margin-top: 10px; */
+    padding-top: 15px;
+    /* width: 120px; */
+    /* border: 1px solid rgba(255, 234, 48, 0.521); */
+    border-radius: 0;
+  }
   .burgerpng {
     display: block;
     margin: auto 0;
-    width: 80px;
+    width: 60px;
     padding: 10px;
   }
 }
@@ -281,7 +299,7 @@ ul {
 .topHeader {
   width: 100vw;
   max-width: 100%;
-  height: 700px;
+  height: 100vh;
 }
 
 .banner {
@@ -300,7 +318,7 @@ ul {
 .banner img {
   z-index: -99;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   object-fit: cover;
   -o-object-fit: cover;
   object-position: top;
@@ -314,15 +332,20 @@ ul {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-  height: 700px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .heroContent {
   /*background-color : rgba(22, 22, 34, 0.548);
  */
 
-  position: relative;
-  transform: translate(0, -160%);
+  position: absolute;
+  /* transform: translate(0, -160%); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   overflow: hidden; /* must be used if margin-right:-200px is used in slideFromLeft animation */
 }
 
@@ -332,6 +355,7 @@ ul {
   animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  overflow-x: hidden;
 }
 
 .heroHeader {
@@ -340,7 +364,7 @@ ul {
     left: 50%;
     transform: translateX(-55%); */
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
   color: #c1a35f;
   font-family: "Tangerine", cursive;
   overflow: hidden;
@@ -349,8 +373,9 @@ ul {
   /* position: absolute;
     top: 42%;
     left: 32%; */
+  width: 90vw;
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
   word-spacing: 0.001em;
   font-family: "Open Sans", sans-serif;
   color: rgb(255, 255, 255);
@@ -388,7 +413,7 @@ ul {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   margin: 15px;
 }
 .btn {
@@ -401,7 +426,7 @@ ul {
 .btnP {
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   border: 2px solid #c1a35f;
   width: 144px;
@@ -419,7 +444,7 @@ ul {
 .btnP:hover {
   border-color: #cfa135;
   width: 156px;
-  padding: 14px 0;
+  padding: 16px 0;
   color: white;
   background: #c1a35f;
 }
@@ -478,17 +503,69 @@ ul {
 *
 *********************** */
 @media only screen and (max-width: 768px) {
+  .heroContent {
+    /* transform: translateY(-220%); */
+  }
   .heroHeader {
-    font-size: 60px;
+    font-size: 15vw;
   }
   .alterColor {
-    font-size: 30px;
+    font-size: 7vw;
   }
   .alterColor span {
-    font-size: 45px;
+    font-size: 11vw;
   }
   .heroP {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .heroBtn {
+    /* margin-top: 55px; */
+  }
+  .btnP {
+    font-size: 15px;
+  }
+  .prevBtn,
+  .nextBtn {
+    padding: 5px 15px;
+    top: 85vh;
+    border-radius: 50%;
+  }
+}
+/* ******************
+*
+*
+*   Header max 768px ends ! max 576px starts
+*
+*
+******************** */
+@media only screen and (max-width: 576px) {
+  .heroContent {
+    /* top: -15%; */
+  }
+  .heroHeader {
+    font-size: 55px;
+  }
+  .alterColor {
+    font-size: 25px;
+    width: 95vw;
+  }
+  .alterColor span {
+    font-size: 40px;
+  }
+  .heroP {
+    font-size: 16px;
+  }
+  .heroBtn {
+    /* margin-top: 55px; */
+  }
+  .btnP {
+    font-size: 14px;
+  }
+  .prevBtn,
+  .nextBtn {
+    padding: 5px 15px;
+    top: 85vh;
+    border-radius: 50%;
   }
 }
 /* ********************
@@ -716,6 +793,12 @@ ul {
 ******************** */
 
 @media only screen and (max-width: 576px) {
+  .menuHeader > h1 > span {
+    font-size: 55px;
+  }
+  .menuHeader h1 {
+    font-size: 30px;
+  }
   .menuHeader .underline::after {
     /* margin: 15px 18px 0 0; */
     transform: translateX(-109.6%);
@@ -727,7 +810,7 @@ ul {
     margin-bottom: 10px;
   }
   .tablinks {
-    margin: 7px;
+    margin: 5px;
     width: 45%;
     border-bottom: 0.5px solid #c1a35f;
     border-radius: 20px;
@@ -746,6 +829,13 @@ ul {
     width: 125px;
   }
 }
+/* **********************
+*
+*
+*       
+*
+*
+**************************** */
 
 /*All Menu Items Ends Here howver Admin menuUpdator remains below*/
 /* ***
