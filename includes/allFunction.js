@@ -25,28 +25,62 @@ function scrollFunction(){
   var truck = document.querySelector(".truckHolder");
   var hoverElement = document.getElementsByClassName("imageLayer");
  // var hoverLayer = document.getElementsByClassName("layerText");
- if(document.body.scrollTop < 1350 || document.documentElement.scrollTop < 1350){
-    for(var i=0;i<slider.length;++i){
-      // slider[i].style.transform = "translate(-405%,-230%)";
-      slider[i].style.transform = "translateX(-76vw)";
-      // hoverElement[i].style.transform = "translate(-428%,-112%)"; 
-      hoverElement[i].style.transform = "translateX(-76vw)"; 
-    //  hoverLayer[i].style.transform = "translate(0%,0%)";
-      console.log("Entered scrollTop");
-      } 
-     truck.style.transform = "translateX(-58vw)";
+ 
+  if(document.documentElement.clientWidth > 768){
+    if(document.body.scrollTop < 1350 || document.documentElement.scrollTop < 1350){
+      for(var i=0;i<slider.length;++i){
+        // slider[i].style.transform = "translate(-405%,-230%)";
+        slider[i].style.transform = "translateX(-76vw)";
+        // hoverElement[i].style.transform = "translate(-428%,-112%)"; 
+        hoverElement[i].style.transform = "translateX(-76vw)"; 
+      //  hoverLayer[i].style.transform = "translate(0%,0%)";
+        console.log("Entered scrollTop");
+        } 
+      truck.style.transform = "translateX(-58vw)";
+      
+    }
+    if(document.documentElement.clientHeight >= 1000){
+      if((document.body.scrollTop > 1350 && document.body.scrollTop < 2250 )|| (document.documentElement.scrollTop > 1350 && document.documentElement.scrollTop < 2250)){
+        for(var i=0;i<slider.length;++i){
+          // slider[i].style.transform = "translate(10vw,-230%)";
+          slider[i].style.transform = "translateX(0%)";
+          hoverElement[i].style.transform = "translateX(0%)"; 
+        // hoverLayer[i].style.transform = "translate(0%,0%)";    
+          console.log("Entered Scroll Area ");
+          } 
+        truck.style.transform = "translateX(22%)";
+        }  
+    }
+    if(document.documentElement.clientHeight < 1000){
+      if((document.body.scrollTop > 1350 && document.body.scrollTop < 2000 )|| (document.documentElement.scrollTop > 1350 && document.documentElement.scrollTop < 2000)){
+        for(var i=0;i<slider.length;++i){
+          // slider[i].style.transform = "translate(10vw,-230%)";
+          slider[i].style.transform = "translateX(0%)";
+          hoverElement[i].style.transform = "translateX(0%)"; 
+        // hoverLayer[i].style.transform = "translate(0%,0%)";    
+          console.log("Entered Scroll Area ");
+          } 
+        truck.style.transform = "translateX(22%)";
+        }  
+    }
     
-  }
- if((document.body.scrollTop > 1350 && document.body.scrollTop < 1750 )|| (document.documentElement.scrollTop > 1350 && document.documentElement.scrollTop < 1750)){
-   for(var i=0;i<slider.length;++i){
-    // slider[i].style.transform = "translate(10vw,-230%)";
-    slider[i].style.transform = "translateX(0%)";
-    hoverElement[i].style.transform = "translateX(0%)"; 
-   // hoverLayer[i].style.transform = "translate(0%,0%)";    
-    console.log("Entered Scroll Area ");
+
+    ///////////////////////////
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("brandLogo").style.width = "85px";
+      document.getElementById("navUl").style.padding = "0 70px 0 10px";
+      document.getElementById("navLogo").style.marginBottom = "0px";
+
     } 
-   truck.style.transform = "translateX(22%)";
-  }  
+    else {
+      document.getElementById("brandLogo").style.width = "125px";
+      document.getElementById("navUl").style.padding = "15px 70px 15px 10px";
+      document.getElementById("navLogo").style.marginBottom = "3px";
+      
+    }
+  }
+
+ 
   // if(document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750){
   //   for(var i=0;i<slider.length;++i){
   //     // slider[i].style.transform = "translate(455%,-230%)"
@@ -57,18 +91,7 @@ function scrollFunction(){
   //     } 
   //     truck.style.transform = "translateX(115%)";
   //  }     
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("brandLogo").style.width = "85px";
-    document.getElementById("navUl").style.padding = "0 70px 0 10px";
-    document.getElementById("navLogo").style.marginBottom = "0px";
-  
-  } 
-  else {
-    document.getElementById("brandLogo").style.width = "125px";
-    document.getElementById("navUl").style.padding = "15px 70px 15px 10px";
-    document.getElementById("navLogo").style.marginBottom = "3px";
-    
-  }
+ 
 
 }
 
