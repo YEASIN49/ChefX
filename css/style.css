@@ -1170,6 +1170,7 @@ ul {
 /* //////// Parallex Styles Starts Here ///////////// */
 
 .parallexBackground {
+  position: relative;
   min-height: 300px;
   background-image: url("../images/parallex.jpg");
   background-attachment: fixed;
@@ -1194,8 +1195,9 @@ ul {
 }
 #parallexText {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-49%, 60%);
+  transform: translate(-50%, -50%);
   font-family: "Tangerine", cursive;
   font-size: 75px;
   padding: 25px;
@@ -1212,6 +1214,19 @@ ul {
 .bottomBorder {
   border-bottom-left-radius: 95%;
 }
+
+@media only screen and (max-width: 768px) {
+  .empty {
+    height: 25px;
+  }
+  .topBorder {
+    margin-top: 20px;
+  }
+  #parallexText {
+    font-size: 45px;
+    text-align: center;
+  }
+}
 /* /////////// Parallex Style Ends Here //////////// /*
 
 
@@ -1220,13 +1235,13 @@ ul {
 
 .offerWrapper {
   background: white;
-  width: 100vw;
+  /* width: 100vw; */
   max-width: 1300px;
   margin: 150px auto;
   box-sizing: border-box;
 }
 .offerContent {
-  width: 100%;
+  max-width: 100%;
 }
 .offerContent ul {
   display: flex;

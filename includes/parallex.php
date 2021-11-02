@@ -2,7 +2,7 @@
 <div class="parallexContainer">
     <div class="parallexContent">
        <div class="parallexBackground">
-       <p  id="parallexText">Happy Eating</p>
+        <p id="parallexText">Happy Eating</p>
        </div>
        
        
