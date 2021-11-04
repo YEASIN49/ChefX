@@ -445,7 +445,7 @@ ul {
 }
 .btnP:hover {
   border-color: #cfa135;
-  width: 156px;
+  width: 160px;
   padding: 16px 0;
   color: white;
   background: #c1a35f;
@@ -1585,17 +1585,80 @@ ul {
     max-height: 100%;
   }
 }
-/*About Us ends from here*/
-/*//////// Contact starts from here  /////////*/
-/* .contactContainer {
-} */
+/*****************
+*
+*
+*   About Us ends from here
+*
+*
+*
+*******************/
+/***************************
+*
+*
+* Contact starts from here  /
+*
+*
+**************************************/
+.contactContainer {
+  width: 100%;
+  max-width: 1300px;
+}
+.contactContainer h2 {
+  padding: 20px;
+}
 .contactContent {
   display: flex;
   flex-flow: row wrap;
-  width: 1300px;
+
+  font-family: "Roboto", sans-serif;
+}
+.contactContainer .menuHeader {
+  margin-bottom: 35px;
 }
 .socialIcon {
   flex-grow: 1;
+  width: 50%;
+}
+.addressContainer {
+  margin-bottom: 25px;
+  /* padding: 0 10px; */
+}
+.addressContainer h2 {
+  /* padding: 10px; */
+}
+.addressContent {
+  padding: 5px 30px;
+  /* background-color: red; */
+}
+.addressNumber {
+  width: 35%;
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  color: #292626;
+  /* text-align: left; */
+  border-bottom: 1px dashed gray;
+  font-weight: bold;
+}
+.addressDetail {
+  width: 90%;
+  /* background-color: red; */
+  display: block;
+  /* margin: 0; */
+  /* padding-bottom: 15px; */
+  color: #3a3937;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.mobileNumber{
+  width: 90%;
+  display: block;
+  /* padding: 10px 25px; */
+  /* margin: 10px auto; */
+  color: #292626;
+  /* background-color: green; */
+  box-sizing: border-box;
 }
 .socialIcon ul {
   display: flex;
@@ -1632,6 +1695,59 @@ ul {
 }
 #googleMap {
   margin: 0;
+}
+.reservationFormContainer {
+  width: 50%;
+}
+
+.reservationFormContainer h2 {
+  margin-bottom: 15px;
+}
+
+.reservationFormContainer label {
+  display: block;
+  width: 90%;
+  padding: 5px 10px 10px 5px;
+  margin: auto;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.reservationInput {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.115);
+}
+.reservationInput[type="submit"] {
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px;
+  font-weight: bold;
+  width: 120px;
+  margin-left: 5%;
+  background-color: #112031;
+  color: #fff;
+}
+.reservationInput[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #112031;
+}
+@media screen and (max-width: 768px) {
+  /* width: 90%;
+  margin: auto; */
+  .addressContainer {
+    width: 100%;
+  }
+  .socialIcon ul {
+    width: 90%;
+  }
+  .reservationFormContainer {
+    width: 100%;
+  }
 }
 
 /*//////// Contact ends from here  /////////*/
