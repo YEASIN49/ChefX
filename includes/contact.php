@@ -6,12 +6,6 @@
 
     <div class="contactContent">
       <div class="socialIcon">
-        <div class="addressContainer">
-          <h2>Our Location:</h2>
-          <p class="addressContent"><span class="addressNumber">Address 1:</span> <span class="addressDetail">1/2/A xyz tower,Kolabagan road, Dhanmondi, Dhaka-1219</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
-          <p class="addressContent"><span class="addressNumber">Address 2:</span> <span class="addressDetail">1/2/3A abc tower, X Road, Mirpur-2, Dhaka-12xx</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
-          <p class="addressContent"><span class="addressNumber">Address 3:</span> <span class="addressDetail">12/34/C X center, xyz road, Mohammadpur, Dhaka-12xx</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
-        </div>
         <ul>
           <h2 class="socialHeader" >Find Us on Social Media!</h2>
           <li class="twitter"><a href=""></a><i class="fab fa-twitter"><p>twitter</p></i></li>
@@ -19,6 +13,13 @@
           <li class="youtube"><a href=""></a><i class="fab fa-youtube"><p>YouTube</p></i></li>
           <li class="instagram"><a href=""></a><img src="images/logo/instagram.png" alt=""></li>
         </ul>
+        <div class="addressContainer">
+          <h2>Our Location:</h2>
+          <p class="addressContent"><span class="addressNumber">Address 1:</span> <span class="addressDetail">1/2/A xyz tower,Kolabagan road, Dhanmondi, Dhaka-1219</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
+          <p class="addressContent"><span class="addressNumber">Address 2:</span> <span class="addressDetail">1/2/3A abc tower, X Road, Mirpur-2, Dhaka-12xx</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
+          <p class="addressContent"><span class="addressNumber">Address 3:</span> <span class="addressDetail">12/34/C X center, xyz road, Mohammadpur, Dhaka-12xx</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
+        </div>
+       
       </div>
       <div class="reservationFormContainer">
         <h2>Reserve Your Table!</h2>

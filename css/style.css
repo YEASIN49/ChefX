@@ -1054,6 +1054,7 @@ ul {
   padding: 0 7px;
   padding-top: 20px;
   text-align: center;
+  transition: 0.5s ease-out;
   border-bottom: 3px solid #f05913;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1631,6 +1632,9 @@ ul {
   padding: 5px 30px;
   /* background-color: red; */
 }
+.addressContent span {
+  font-size: 17px;
+}
 .addressNumber {
   width: 35%;
   display: block;
@@ -1651,7 +1655,7 @@ ul {
   font-size: 18px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.mobileNumber{
+.mobileNumber {
   width: 90%;
   display: block;
   /* padding: 10px 25px; */
@@ -1664,9 +1668,9 @@ ul {
   display: flex;
   flex-flow: row wrap;
 }
-.contactContainer .socialHeader{
-  display:block; 
-  width: 100%; 
+.contactContainer .socialHeader {
+  display: block;
+  width: 100%;
   margin-bottom: 20px;
   /* padding: 20px 5px; */
 }
@@ -1736,8 +1740,10 @@ ul {
   margin-left: 5%;
   background-color: #112031;
   color: #fff;
+  transition: 0.5s;
 }
 .reservationInput[type="submit"]:hover {
+  transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.03);
   color: #112031;
 }
@@ -1750,25 +1756,23 @@ ul {
   .socialIcon ul {
     width: 95%;
   }
-  .contactContainer .socialHeader{
+  .contactContainer .socialHeader {
     padding: 15px 5px;
   }
-  .socialIcon ul li{
+  .socialIcon ul li {
   }
   .reservationFormContainer {
     width: 100%;
   }
 }
-@media screen and (max-width: 375px){
-  .addressContent{
+@media screen and (max-width: 375px) {
+  .addressContent {
     padding: 5px 15px;
     /* font-size: 1px; */
   }
-  .addressContent span{
-    font-size: 17px;
-  }
-  .addressNumber{
-    width:100%;
+
+  .addressNumber {
+    width: 100%;
   }
   .socialIcon ul li {
     font-size: 30px;
@@ -1776,7 +1780,7 @@ ul {
   .instagram img {
     height: 50px;
     width: 45px;
-  } 
+  }
 }
 
 /*//////// Contact ends from here  /////////*/
@@ -1869,7 +1873,7 @@ tr:nth-child(even) {
 
 /*/////////// Footer Starts From Here //////////////*/
 .footerContainer {
-  margin-top:40px;
+  margin-top: 40px;
   background: black;
   padding: 30px 0;
   color: white;
