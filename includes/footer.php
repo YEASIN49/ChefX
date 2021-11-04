@@ -12,7 +12,7 @@
 
         </div>
         <div class="middleItem">
-               <p>This Website was developed for learning perpose from the inspiration of SpicyX template.Using This website for any professional perpose is strongly prohibitted.</p>
+               <p>This Website was developed for learning perpose from the inspiration of SpicyX template UI.Using This website for any professional perpose is strongly prohibitted.</p>
             </div>
     </div>
 </footer>

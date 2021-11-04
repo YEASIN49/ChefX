@@ -13,7 +13,7 @@
           <p class="addressContent"><span class="addressNumber">Address 3:</span> <span class="addressDetail">12/34/C X center, xyz road, Mohammadpur, Dhaka-12xx</span><span class="mobileNumber">Call: +8801234567890 </span> </p>
         </div>
         <ul>
-          <h2 style="display:block; width: 100%; margin-bottom: 20px;">Find Us on Social Media!</h2>
+          <h2 class="socialHeader" >Find Us on Social Media!</h2>
           <li class="twitter"><a href=""></a><i class="fab fa-twitter"><p>twitter</p></i></li>
           <li class="facebook"><a href=""></a><i class="fab fa-facebook-square"><p>facebook</p></i></li>
           <li class="youtube"><a href=""></a><i class="fab fa-youtube"><p>YouTube</p></i></li>

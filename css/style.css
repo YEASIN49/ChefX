@@ -1143,7 +1143,7 @@ ul {
   }
 } */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .featureItemContainer {
     display: none;
   }
@@ -1664,7 +1664,12 @@ ul {
   display: flex;
   flex-flow: row wrap;
 }
-
+.contactContainer .socialHeader{
+  display:block; 
+  width: 100%; 
+  margin-bottom: 20px;
+  /* padding: 20px 5px; */
+}
 .socialIcon ul li {
   font-size: 45px;
   cursor: pointer;
@@ -1743,11 +1748,35 @@ ul {
     width: 100%;
   }
   .socialIcon ul {
-    width: 90%;
+    width: 95%;
+  }
+  .contactContainer .socialHeader{
+    padding: 15px 5px;
+  }
+  .socialIcon ul li{
   }
   .reservationFormContainer {
     width: 100%;
   }
+}
+@media screen and (max-width: 375px){
+  .addressContent{
+    padding: 5px 15px;
+    /* font-size: 1px; */
+  }
+  .addressContent span{
+    font-size: 17px;
+  }
+  .addressNumber{
+    width:100%;
+  }
+  .socialIcon ul li {
+    font-size: 30px;
+  }
+  .instagram img {
+    height: 50px;
+    width: 45px;
+  } 
 }
 
 /*//////// Contact ends from here  /////////*/
@@ -1840,8 +1869,9 @@ tr:nth-child(even) {
 
 /*/////////// Footer Starts From Here //////////////*/
 .footerContainer {
+  margin-top:40px;
   background: black;
-  padding-bottom: 30px;
+  padding: 30px 0;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -1849,6 +1879,7 @@ tr:nth-child(even) {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+  padding: 20px 5px;
 }
 .footerContent div {
   width: 30vw;

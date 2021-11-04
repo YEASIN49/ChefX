@@ -26,7 +26,7 @@ function scrollFunction(){
   var hoverElement = document.getElementsByClassName("imageLayer");
  // var hoverLayer = document.getElementsByClassName("layerText");
  
-  if(document.documentElement.clientWidth > 768){
+  if(document.documentElement.clientWidth > 767){
     if(document.body.scrollTop < 1350 || document.documentElement.scrollTop < 1350){
       for(var i=0;i<slider.length;++i){
         // slider[i].style.transform = "translate(-405%,-230%)";
