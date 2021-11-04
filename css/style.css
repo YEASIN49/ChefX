@@ -1,6 +1,7 @@
 * {
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
 *:focus {
   outline: none;
@@ -953,7 +954,7 @@ ul {
 }
 .featureItemContent {
   padding: 15px 0;
-  height: 350px;
+  height: 375px;
   width: 97%;
   background: linear-gradient(#ca9823, rgb(131, 35, 35));
   border-left: 12px solid gray;
@@ -964,7 +965,7 @@ ul {
 .imageContainer {
   /* width: 1170px; */
   width: 97%;
-  height: 350px;
+  height: 345px;
   border-left: 10px solid rgb(202, 11, 59);
   border-right: 10px solid rgb(202, 11, 59);
   border-radius: 15%;
@@ -981,7 +982,7 @@ ul {
 }
 
 .featuredImages .imageAdjuster {
-  margin: 40px 5px 0 5px;
+  margin: 60px 5px 0 5px;
   transition: 2s;
   cursor: pointer;
   z-index: 2;
@@ -995,12 +996,15 @@ ul {
   width: 21vw;
   border: 2px solid rgba(128, 128, 128, 0.582);
   border-radius: 5%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
 }
 .featuredImages .truckHolder {
   position: absolute;
   width: 85vw;
   max-width: 1200px;
-  height: 465px;
+  height: 485px;
   border: none;
   transition: 2s;
 }
@@ -1024,12 +1028,12 @@ ul {
 } */
 .imageLayer {
   /* background-color: #ff27277a; */
-  width: 22vw;
+  width: 21vw;
   height: 220px;
   /* opacity: 0; */
   /* height: 100%; */
-  max-width: 268px;
-  margin: 0 6px;
+  max-width: 256px;
+  margin: 0 5px;
   /* padding: 0 7px; */
   display: flex;
   flex-direction: column;
@@ -1123,29 +1127,21 @@ ul {
 *
 *
 ********************************* */
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .imageLayer {
-    /* position: relative; */
-    /* background-color: #ff27277a; */
     width: 22vw;
     height: 220px;
-    /* opacity: 0; */
-    /* height: 100%; */
     max-width: 270px;
     margin: 0 8px;
   }
 
   .imageLayer:last-child {
-    /* margin-left: 3px; */
     margin-right: 12px;
-    /* width: 30vw; */
-    /* transform: translateX(-26vw); */
   }
 
   .layerText {
-    /* margin: 0; */
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .featureItemContainer {
@@ -1375,15 +1371,15 @@ ul {
 
 /* About Us Starts from here*/
 
+.aboutContainer {
+  width: 100%;
+  max-width: 1300px;
+}
+
 .aboutItem:nth-child(odd) {
-  background: rgba(248, 188, 58, 0.192);
+  /* background: rgba(248, 188, 58, 0.192); */
 }
-.aboutFlexContent {
-  display: flex;
-  list-style-type: none;
-  width: 1300px;
-  /* flex-flow: row wrap;*/
-}
+
 .aboutItem {
   margin-bottom: 40px;
 }
@@ -1399,22 +1395,200 @@ ul {
   word-spacing: 0.05em;
   font-weight: bold;
 }
+.aboutFlexContent {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+  max-width: 1300px;
+  /* max-height: 950px; */
 
-.aboutFlexConternt img {
+  /* background: rgba(248, 188, 58, 0.192); */
+  /* flex-flow: row wrap;*/
+}
+.aboutImageContainer {
+  /* width: 35vw; */
+  /* max-width: 470px; */
+  /* height: 90%; */
+  /* max-height: 600px; */
+}
+.aboutImage {
+  margin: 0;
+  width: 35vw;
+  max-width: 470px;
+  height: 35vw;
+  max-height: 600px;
+  padding: 15px;
+}
+.aboutFlexContent img {
   margin: 0;
 }
 
 .leftParagraph {
-  margin: 140px 5vw 10px 0;
-}
-.rightParagraph {
-  margin: 140px 10px 10px 5vw;
+  /* margin: 140px 5vw 10px 0; */
+  /* background-color: lightgoldenrodyellow; */
+  /* background-color: rgb(227, 220, 255); */
+  background-image: url(../images/aboutUs/about-bg-8.jpg);
+  /* object-fit: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* transform: scale(1.5); */
+  border-top-right-radius: 25%;
 }
 
+.aboutParagraph {
+  position: relative;
+  width: 70vw;
+  max-width: 750px;
+  height: 35vw;
+  max-height: 600px;
+  /* padding: 15px; */
+
+  /* margin: 140px 10px 10px 5vw; */
+}
+.paragraphRight {
+  /* background: rgba(248, 188, 58, 0.192); */
+  background-image: url(../images/aboutUs/about-bg-2.png);
+  /* object-fit: cover; */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  object-fit: cover;
+  /* opacity: 0.5; */
+  height: 100%;
+  width: 100%;
+}
+.aboutParagraphContent {
+  width: 90%;
+  /* padding: 55px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin: 25px; */
+}
+.descriptionHeader {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* ******************
+*
+*   About media max width: 760px
+*
+****************** */
+@media only screen and (max-width: 991px) {
+  .aboutContainer .menuHeader {
+    margin-bottom: 35px;
+  }
+  .leftParagraph {
+    /* margin-bottom: 250px; */
+  }
+  .aboutParagraph {
+    height: 400px;
+  }
+  .aboutImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutImage {
+    height: 40vw;
+    max-height: 500px;
+  }
+  .aboutItem {
+    margin: 30px auto;
+    /* padding: 10px auto; */
+    max-height: 500px;
+  }
+}
+/* ***********
+*
+* about max-width:991px ends
+* about max-width: 768px starts
+*
+************** */
+@media only screen and (max-width: 768px) {
+  .aboutFlexContent {
+    flex-direction: column;
+  }
+  .leftParagraph > .aboutFlexContent {
+    flex-direction: column-reverse;
+  }
+  .aboutItem {
+    height: 200vh;
+    max-height: 1050px;
+    margin-bottom: 30px;
+  }
+  .aboutParagraph {
+    height: 100vh;
+    max-height: 350px;
+    width: 95vw;
+    /* padding: 10px; */
+    margin-bottom: 15px;
+  }
+  .aboutParagraphContent {
+  }
+  .aboutImageContainer {
+    max-width: 90vw;
+    max-height: 100%;
+  }
+  .aboutImage {
+    width: 90vw;
+    max-width: 556px;
+    height: 100%;
+    max-height: 750px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutImageContainer {
+    /* width: 100vw; */
+    max-width: 99vw;
+    max-height: 100%;
+  }
+  .aboutImage {
+    width: 97vw;
+    max-width: 476px;
+    padding: 0 0 15px 0;
+  }
+  .aboutParagraph {
+    width: 100vw;
+    height: 100vh;
+    max-height: 450px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  .aboutParagraphContent {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
+/* *******************
+*
+*
+*
+**************** */
+@media only screen and (max-width: 425px) {
+  .aboutItem {
+    height: 200vh;
+    max-height: 1020px;
+  }
+  .aboutParagraph {
+    /* height: 200vh; */
+    max-height: 550px;
+    padding: 0 10px;
+  }
+  .aboutParagraphContent {
+    height: 200vh;
+    max-height: 100%;
+  }
+}
 /*About Us ends from here*/
 /*//////// Contact starts from here  /////////*/
-.contactContainer {
-}
+/* .contactContainer {
+} */
 .contactContent {
   display: flex;
   flex-flow: row wrap;
