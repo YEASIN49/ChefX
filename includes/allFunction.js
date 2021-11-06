@@ -135,7 +135,7 @@ function openTab(menuName , activeBtn ){
 
 
 var defaultOpenBtn = document.getElementsByClassName("active");
-defaultOpenBtn[0].click(); 
+// defaultOpenBtn[0].click(); 
 
 
 /*///////// Common Function for restricting elements 
@@ -156,6 +156,28 @@ function stopDisplay(content){
 
 
 ////// Google Map //////////
+
+
+
+/////////////  Log In/ Register background ////////////////
+let imgSrc = document.getElementById("formBackgroundId");
+if(document.documentElement.clientWidth
+   < 576){
+  
+  imgSrc.setAttribute("src", "images/login/login-bg-3_small-2.jpg");
+  console.log(imgSrc);
+}
+else if(document.documentElement.clientWidth
+  >= 576 && document.documentElement.clientWidth
+  < 991){
+    imgSrc.setAttribute("src", "images/login/login-bg-4_medium.jpg");
+    console.log(imgSrc);
+}
+else{
+  imgSrc.setAttribute("src", "images/login/login-bg-3_large.jpg");
+    console.log(imgSrc);
+}
+
 
 
 

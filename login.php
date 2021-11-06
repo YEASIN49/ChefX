@@ -45,7 +45,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     
      <link rel="stylesheet" type="text/css" href="css/style.css" >
-     <link rel="stylesheet" type="text/css" href="css/form.css" >
+     <!-- <link rel="stylesheet" type="text/css" href="css/form.css" > -->
      
       <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
 
@@ -53,17 +53,30 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
 
-      </head>
-        <body style="color:white">
-        <?php include("includes/nav.php")?>
-        <div class="logInFormContainer">
-        <div class="logInWrapper">
-        <form  method="post">
-	    <input type="text" value="" placeholder="Email id" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
-      	<input type="password" value="" placeholder="Password" name="password" required="">	
-		<input type="submit" name="login" id="submit" value="LOG IN">
-        </form>
-        </div>
-        </div>
-     </body>
+     </head>
+          <body>
+               <?php include("includes/nav.php")?>
+               <div class="logInBackground">
+                    <div class="logInFormContainer">
+                         <img id="formBackgroundId" class="formBackground" src="" alt="test">
+                         <!-- <img class="formBackground" src="images/login/login-bg-3_medium.jpg" alt="test"> -->
+                         <div class="loginFormContent">
+                              
+                              <form class="loginForm"  method="post">
+                                   <i class="fas fa-user loginUserIcon"></i>     
+                                   <input class="loginInput" type="text" value="" placeholder="Username" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
+                                   <input class="loginInput" type="password" value="" placeholder="Password" name="password" required="">
+                                   	
+                                   <input class="loginSubmitBtn" type="submit" name="login" id="submit" value="LOG IN">
+                                   <div class="bottomPrompt">
+                                        <a class="formPrompt" href="">Create New Account!</a>
+                                        <a class="formPrompt" href="">Forget Password/Username?</a>
+                                   </div>
+                              </form>
+                             
+                         </div>
+                    </div>
+               </div>
+               <script src="./includes/allFunction.js"></script>
+          </body>
      </html>

@@ -156,7 +156,10 @@ ul {
 }
 
 .burgerpng {
+  /* position: relative;
+  z-index: 99; */
   display: none;
+  cursor: pointer;
   margin: 0;
   /* background-color: red; */
   width: 100px;
@@ -1899,3 +1902,227 @@ tr:nth-child(even) {
   color: red;
   width: fit-content;
 }
+
+/* ******************************
+*
+*
+*     Login form Start
+*
+*
+********************************* */
+
+.logInBackground {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-color: #2c0b57; */
+  background-image: url(../images/login/bg-black-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logInFormContainer {
+  position: relative;
+  width: 55%;
+  height: 75%;
+  max-width: 1080px;
+  max-height: 720px;
+  margin-top: 60px;
+  /* background-image: linear-gradient(
+      rgba(35, 25, 58, 0.37),
+      rgba(37, 20, 56, 0.151)
+    ),
+    url(../images/login/login-bg-3.jpg); */
+  /* background-image: linear-gradient(
+    to right,
+    #d4b9ff02,
+    rgba(196, 132, 255, 0.096)
+  ); */
+  /* url(../images/login/login-bg-3.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* z-index: 2; */
+}
+.logInFormContainer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  max-height: 720px;
+  background: linear-gradient(to right, #d4b9ff02, rgba(196, 132, 255, 0.096));
+  z-index: 0;
+}
+.formBackground {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  max-height: 720px;
+}
+
+.loginFormContent {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  /* display: block; */
+  width: 45%;
+  height: 90%;
+  max-height: 700px;
+  border-radius: 20px;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: transparent;
+  z-index: 2;
+}
+.loginForm {
+  /* background-image: linear-gradient(to right, #ff9966, #ff5e62); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* border: 2px solid rgba(0, 0, 0, 0.562); */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+  /* background-color: #112031; */
+}
+.loginUserIcon {
+  position: absolute;
+  top: 5%;
+  /* margin-bottom: 25px; */
+  /* background-color: #27ff39; */
+  height: 55px;
+  padding: 10px 0;
+  width: 55px;
+  font-size: 30px;
+  border: 0.5px solid rgba(255, 241, 43, 0.37);
+  /* box-shadow: rgba(0, 0, 0, 0.114) 3px 3px 7px 0px; */
+  box-shadow: 3px 3px 5px #5242113a, -3px -3px 5px #ffd037;
+  border-radius: 50%;
+  /* color: #681bc0; */
+  color: rgb(29, 27, 27);
+  /* background-color: rgb(255, 246, 246); */
+  text-align: center;
+  box-sizing: border-box;
+}
+.loginInput {
+  color: gray;
+  display: block;
+  padding-left: 15px;
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid rgb(241, 170, 15);
+  border-radius: 20px;
+}
+.loginSubmitBtn {
+  /* position: absolute; */
+  /* top: 65%; */
+  cursor: pointer;
+  margin-top: 10px;
+  width: 110px;
+  height: 35px;
+  border-radius: 40px;
+  font-weight: 600;
+  border: none;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+  transition: 0.5s ease-in-out;
+  /* color: rgb(88, 81, 81); */
+  /* background-color: rgba(255, 255, 255, 0.87); */
+}
+.loginSubmitBtn:hover {
+  /* background: linear-gradient(to top left, #ff8a00, #e52e71); */
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
+  transition: 0.5s ease-in-out;
+  /* color: white; */
+}
+
+.bottomPrompt {
+  position: absolute;
+  bottom: 5%;
+  width: 80%;
+}
+.formPrompt {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  /* width: 100%; */
+  /* background-color: red; */
+  font-size: 14px;
+  color: rgb(29, 27, 27);
+  /* color: rgba(255, 255, 255, 0.753); */
+  font-family: "Roboto", sans-serif;
+}
+
+/* *******************************
+*
+*
+*   Login mediamax-1024
+*
+*
+******************************** */
+
+@media screen and (max-width: 1024px) {
+  .logInFormContainer {
+    width: 80%;
+    height: 80%;
+    margin-top: 85px;
+  }
+  .loginFormContent {
+    top: 3%;
+    width: 50%;
+    height: 94%;
+  }
+}
+/* ********************
+* login max-768px
+*********************** */
+@media screen and (max-width: 768px) {
+  .loginForm {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.637);
+  }
+}
+@media screen and (max-width: 576px) {
+  .logInFormContainer {
+    width: 75%;
+    /* min-width: 260px; */
+    height: 80%;
+    margin-top: 65px;
+  }
+  .loginFormContent {
+    top: -5%;
+    left: -10%;
+    width: 120%;
+    /* max-width: 320px; */
+    height: 110%;
+  }
+  .loginUserIcon {
+    top: 8%;
+    /* color: #b575ff; */
+    /* color: #39303d; */
+    /* color: wheat; */
+    color: white;
+    border-color: #27232944;
+    border-radius: 20%;
+    border: none;
+    /* #3A303E */
+    /* color: rgb(29, 27, 27); */
+    box-shadow: 3px 3px 3px #2c1f31, -3px -3px 3px #443c4791;
+  }
+}
+
+/* ******************************
+*
+*
+*     Login form Ends
+*
+*
+********************************* */

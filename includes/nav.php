@@ -1,10 +1,10 @@
 <div class="navContainer">
   <div class="navWrapper">
     <div id="navLogo">
-        <a  href="#"><img src="images/newlogo2.png" id="brandLogo"></a>
+        <a  href="./index.php"><img src="images/newlogo2.png" id="brandLogo"></a>
     </div>    
     <ul id="navUl" class="hideable-nav">
-      <li class="navLi"><a href="index.php">HOME</a></li>
+      <li class="navLi"><a href="./index.php">HOME</a></li>
       <li class="navLi"><a onclick="jumpWindow('menuSection')">MENU</a></li>
       <li class="navLi"><a onclick="jumpWindow('offerSection')">OFFERS</a></li> 
       <li class="navLi"><a onclick="jumpWindow('aboutSection')">ABOUT US</a></li> 
