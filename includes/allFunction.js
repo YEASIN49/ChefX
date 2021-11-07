@@ -134,8 +134,13 @@ function openTab(menuName , activeBtn ){
 }
 
 
-var defaultOpenBtn = document.getElementsByClassName("active");
-// defaultOpenBtn[0].click(); 
+let defaultOpenBtn; 
+if(document.getElementsByClassName("active").length >= 1){
+  defaultOpenBtn = document.getElementsByClassName("active");
+  defaultOpenBtn[0].click(); 
+}
+// console.log(defaultOpenBtn);
+
 
 
 /*///////// Common Function for restricting elements 
@@ -160,23 +165,32 @@ function stopDisplay(content){
 
 
 /////////////  Log In/ Register background ////////////////
-let imgSrc = document.getElementById("formBackgroundId");
-if(document.documentElement.clientWidth
-   < 576){
-  
-  imgSrc.setAttribute("src", "images/login/login-bg-3_small-2.jpg");
-  console.log(imgSrc);
+// let imgSrc;
+console.log(document.getElementById("formBackgroundId"));
+console.log("loginBgImg");
+if(document.getElementById("formBackgroundId") != null){
+  let fetchImage = document.getElementById("formBackgroundId");
+  fetchImageForloginBackground(fetchImage);
 }
-else if(document.documentElement.clientWidth
-  >= 576 && document.documentElement.clientWidth
-  < 991){
-    imgSrc.setAttribute("src", "images/login/login-bg-4_medium.jpg");
-    console.log(imgSrc);
+function fetchImageForloginBackground(imgSrc){
+  if(document.documentElement.clientWidth
+    < 576){
+   
+   imgSrc.setAttribute("src", "images/login/login-bg-3_small-2.jpg");
+   console.log(imgSrc);
+ }
+ else if(document.documentElement.clientWidth
+   >= 576 && document.documentElement.clientWidth
+   < 991){
+     imgSrc.setAttribute("src", "images/login/login-bg-4_medium.jpg");
+     console.log(imgSrc);
+ }
+ else{
+   imgSrc.setAttribute("src", "images/login/login-bg-3_large.jpg");
+     console.log(imgSrc);
+ }
 }
-else{
-  imgSrc.setAttribute("src", "images/login/login-bg-3_large.jpg");
-    console.log(imgSrc);
-}
+
 
 
 

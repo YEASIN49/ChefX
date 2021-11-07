@@ -2011,6 +2011,7 @@ tr:nth-child(even) {
   text-align: center;
   box-sizing: border-box;
 }
+
 .loginInput {
   color: gray;
   display: block;
@@ -2050,15 +2051,67 @@ tr:nth-child(even) {
   bottom: 5%;
   width: 80%;
 }
+
 .formPrompt {
   display: block;
   text-align: center;
   margin-top: 5px;
-  /* width: 100%; */
-  /* background-color: red; */
   font-size: 14px;
   color: rgb(29, 27, 27);
-  /* color: rgba(255, 255, 255, 0.753); */
+  font-family: "Roboto", sans-serif;
+}
+.labeledinput {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: center;
+  /* background-color: red; */
+  margin: 0;
+  /* text-align: right; */
+}
+.formText {
+  width: 135px;
+  /* display: inline; */
+  /* text-align: left; */
+  /* margin-top: 5px; */
+  margin-left: 0;
+  /* margin-right: 0; */
+  font-size: 15px;
+  /* width: 45%; */
+  /* color: #ffffff; */
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+.radioInput {
+  /* padding: 20px; */
+  /* width: 40%; */
+  margin-left: -15%;
+  height: 18px;
+  width: 18px;
+}
+/* input[type="radio"]:checked {
+  background-color: red;
+  color: red;
+} */
+
+.dateInput {
+  width: 100%;
+  padding-left: 5px;
+  /* display: inline; */
+  /* text-align: left; */
+}
+.registrationForm {
+  border-radius: 10px;
+}
+.radioText {
+  margin-left: 0;
+  /* width: 20%; */
+  /* margin-right: 0; */
+  font-size: 15px;
+  /* width: 45%; */
+  /* color: #ffffff; */
+  color: gray;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2092,17 +2145,21 @@ tr:nth-child(even) {
 }
 @media screen and (max-width: 576px) {
   .logInFormContainer {
-    width: 75%;
+    width: 80%;
     /* min-width: 260px; */
-    height: 80%;
-    margin-top: 65px;
+    height: 82%;
+    margin-top: 45px;
   }
   .loginFormContent {
     top: -5%;
     left: -10%;
     width: 120%;
     /* max-width: 320px; */
-    height: 110%;
+    height: 105%;
+  }
+  .loginForm {
+    width: 90%;
+    /* margin-top: 35px; */
   }
   .loginUserIcon {
     top: 8%;
@@ -2113,9 +2170,14 @@ tr:nth-child(even) {
     border-color: #27232944;
     border-radius: 20%;
     border: none;
+    /* margin-bottom: 20px;
+    padding-bottom: 10px; */
     /* #3A303E */
     /* color: rgb(29, 27, 27); */
     box-shadow: 3px 3px 3px #2c1f31, -3px -3px 3px #443c4791;
+  }
+  .dynamicPositionClass {
+    position: static;
   }
 }
 

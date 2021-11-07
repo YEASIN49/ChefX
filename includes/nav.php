@@ -14,9 +14,17 @@
           <button class="signInToggler"  onClick="showIcon()"><i class="fas fa-user"></i><i class="fas fa-caret-down" ></i></button>
         </div>
         <div class="userIconContent">
-          
-          <li class="userIconLi"><a href="login.php">LOG IN</a></li>
-          <li class="userIconLi"><a href="registration.php">SIGN UP</a></li>
+          <?php if($_SESSION["isLogin"]){ ?>
+            <li class="userIconLi"><a href="">PROFILE</a></li>
+            <li class="userIconLi"><a href="./logout.php">LOG OUT</a></li>
+          <?php 
+          }else{ ?>
+            <li class="userIconLi"><a href="login.php">User Log In</a></li>
+            <li class="userIconLi"><a href="registration.php">User Sign Up</a></li>
+            <li class="userIconLi"><a href="./admin/admin.php">Admin Log In</a></li>
+          <?php 
+          } 
+          ?>
           <!-- <li class="userIconLi"><a href="logout.php">Log Out</a></li>     -->
         </div>
       </div>
