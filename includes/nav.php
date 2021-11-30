@@ -1,3 +1,10 @@
+<?php 
+  $isLogin = false;
+  if(isset($_SESSION["isLogin"])){
+    $isLogin = $_SESSION['isLogin'];
+  }
+?>
+
 <div class="navContainer">
   <div class="navWrapper">
     <div id="navLogo">
@@ -14,7 +21,7 @@
           <button class="signInToggler"  onClick="showIcon()"><i class="fas fa-user"></i><i class="fas fa-caret-down" ></i></button>
         </div>
         <div class="userIconContent">
-          <?php if($_SESSION["isLogin"]){ ?>
+          <?php if($isLogin){ ?>
             <li class="userIconLi"><a href="">PROFILE</a></li>
             <li class="userIconLi"><a href="./logout.php">LOG OUT</a></li>
           <?php 

@@ -1641,8 +1641,8 @@ ul {
 .addressNumber {
   width: 35%;
   display: block;
-  padding: 0 10px;
-  margin: 0;
+  padding: 10px;
+  margin: 0 0 10px 0;
   color: #292626;
   /* text-align: left; */
   border-bottom: 1px dashed gray;
